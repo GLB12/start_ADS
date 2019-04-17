@@ -1,0 +1,24 @@
+decl dk_path=designKitRecord[1];
+
+// These path names may be used later to load other files.
+decl dk_CIRCUIT_AEL_DIR       = strcat(dk_path, "circuit/ael/");
+decl dk_CIRCUIT_BITMAP_DIR    = strcat(dk_path, "circuit/bitmaps/");
+decl dk_DE_AEL_DIR            = strcat(dk_path, "de/ael/");
+
+load(strcat(dk_path, "/de/ael/palette"));
+
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate2"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate3"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate4"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate5"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate6"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate7"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate8"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate8"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate9"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate10"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate12"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate14"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate16"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate32"));
+load(strcat(dk_path, "/circuit/ael/pcb_mlsubstrate40"));

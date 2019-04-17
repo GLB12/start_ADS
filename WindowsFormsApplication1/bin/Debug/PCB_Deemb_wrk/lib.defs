@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE PCB_Deemb_lib PCB_Deemb_lib
+ASSIGN PCB_Deemb_lib libMode shared
+INCLUDE pcb_dk/lib.defs

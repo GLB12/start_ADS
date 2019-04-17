@@ -1,0 +1,53 @@
+; Top Design: "PCB_Deemb_lib:template1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PCB_Deemb_lib:template1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+#uselib "ckt" , "S2P"
+S2P:SNP2  N__2 N__3 0 File=filename Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.01 GHz Stop=50.0 GHz Step=0.010 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+
+filename="C:\Users\leiboguo\source\repos\startADS\WindowsFormsApplication1\bin\Debug\PCB_Deemb_wrk\data\WUS_2_B_L3_Deemb_2.s2p"
+
+CF=5 noopt{ 1 to 20 }
+
+Rz_drum=1.184
+Rz_matte=1.538222
+
+mytand=0.00230598 tune{ 0.001 to 0.01 by 0.0001 } opt{ 0 to 0.01 }
+
+H1=4.177
+H2=5.480
+T1=0.656
+W=5.643
+
+highfreq=0.143605 tune{ 0.01 to 50 by 1 } opt{ 0.01 to 1000 }
+
+lowfreq=999.071 tune{ 1 to 1000 by 10 } opt{ 1 to 1000 }
+
+cond=5.8*1e7
+
+er=3.14111 tune{ 2.4 to 3.8 by 0.01 } opt{ 2.2 to 3.8 }
+PC_Line:TL1  N__1 N__0 N=1 S=0 Subst="Subst1" Length=10 in W=W mil Layer=2 ReuseRLGC=0 W_FileFormat=0 
+model Subst1 Substrate N=3 Er[1]=er H[1]=H1 mil TanD[1]=mytand T[1]=T1 mil Cond[1]=cond Er[2]=er H[2]=H2 mil TanD[2]=mytand T[2]=T1 mil Cond[2]=cond T[3]=T1 mil Cond[3]=cond LayerType[1]="ground" LayerType[2]="signal" LayerType[3]="ground" DielectricLossModel=1 FreqForEpsrTanD=CF GHz LowFreqForTanD=lowfreq kHz HighFreqForTanD=highfreq THz RoughnessModel=3 Rz_drum=Rz_drum um Rz_matte=Rz_matte um 
+aele smooth_10inch=moving_average(dB(S(4,3)),500);
+aele phase_measured=unwrap(phase(S(4,3)));phase_modeled=unwrap(phase(S(2,1)));
+aele line_10inch_diff=abs(smooth_10inch-dB(S(2,1)));
+aele phase_diff=abs(phase_measured-phase_modeled);
+aele smooth_diff=smooth_10inch-dB(S(4,3));
+Port:Term1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
+Port:Term3  N__2 0 Num=3 Z=50 Ohm Noise=yes 
+Port:Term4  N__3 0 Num=4 Z=50 Ohm Noise=yes 

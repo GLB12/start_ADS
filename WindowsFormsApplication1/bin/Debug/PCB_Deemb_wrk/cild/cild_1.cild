@@ -1,0 +1,98 @@
+<!DOCTYPE cild_doc>
+<cild libraryName="PCB_Deemb_lib">
+ <CommonData Version="1.1">
+  <SimMode mode="0"/>
+  <StatIter num="250"/>
+  <Optimize GoalValue="50" GoalTarget="0"/>
+  <Variables>
+   <Variable start="1" nominal="1" statistical="0" step="1" statValue="10" type="0" stopUnitType="3" unitFamily="0" stepUnitType="3" optimizeMode="1" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="4" stop="10" points="10" sweep="1" sweepMode="1" enabled="1" Version="1.3" name="freq" startUnitType="3" nominalUnitType="3">
+    <roles/>
+   </Variable>
+   <Variable start="1" nominal="10" statistical="0" step="1" statValue="10" type="0" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="1" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="Length" startUnitType="5" nominalUnitType="5">
+    <roles/>
+   </Variable>
+   <Variable start="1" nominal="1" statistical="0" step="1" statValue="10" type="4" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="1" sweepMode="1" enabled="1" Version="1.3" name="Width" startUnitType="5" nominalUnitType="5">
+    <roles/>
+   </Variable>
+   <Variable start="1" nominal="1" statistical="0" step="1" statValue="10" type="4" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="1" sweepMode="1" enabled="0" Version="1.3" name="Space" startUnitType="5" nominalUnitType="5">
+    <roles/>
+   </Variable>
+   <Variable start="1" nominal="1" statistical="0" step="1" statValue="10" type="4" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="0" Version="1.3" name="Clearance" startUnitType="5" nominalUnitType="5">
+    <roles/>
+   </Variable>
+   <Variable start="1" nominal="0.6" statistical="0" step="1" statValue="10" type="2" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="cond__Thickness" startUnitType="5" nominalUnitType="5">
+    <roles>
+     <role value="5" key="0"/>
+     <role value="cond" key="3"/>
+    </roles>
+   </Variable>
+   <Variable start="45" nominal="90" statistical="0" step="10" statValue="10" type="2" stopUnitType="0" unitFamily="4" stepUnitType="0" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="135" points="10" sweep="0" sweepMode="1" enabled="0" Version="1.3" name="cond__Angle" startUnitType="0" nominalUnitType="0">
+    <roles>
+     <role value="6" key="0"/>
+     <role value="cond" key="3"/>
+    </roles>
+   </Variable>
+   <Variable start="1" nominal="0.6" statistical="0" step="1" statValue="10" type="2" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="cond2__Thickness" startUnitType="5" nominalUnitType="5">
+    <roles>
+     <role value="5" key="0"/>
+     <role value="cond2" key="3"/>
+    </roles>
+   </Variable>
+   <Variable start="45" nominal="57.2" statistical="0" step="10" statValue="10" type="2" stopUnitType="0" unitFamily="4" stepUnitType="0" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="135" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="cond2__Angle" startUnitType="0" nominalUnitType="0">
+    <roles>
+     <role value="6" key="0"/>
+     <role value="cond2" key="3"/>
+    </roles>
+   </Variable>
+   <Variable start="1" nominal="0.01" statistical="0" step="1" statValue="10" type="2" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="1" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="0" Version="1.3" name="M2__Thickness" startUnitType="5" nominalUnitType="5">
+    <roles>
+     <role value="5" key="0"/>
+     <role value="M2" key="3"/>
+    </roles>
+   </Variable>
+   <Variable start="45" nominal="90" statistical="0" step="10" statValue="10" type="2" stopUnitType="0" unitFamily="4" stepUnitType="0" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="135" points="10" sweep="0" sweepMode="1" enabled="0" Version="1.3" name="M2__Angle" startUnitType="0" nominalUnitType="0">
+    <roles>
+     <role value="6" key="0"/>
+     <role value="M2" key="3"/>
+    </roles>
+   </Variable>
+   <Variable start="1" nominal="5.8" statistical="0" step="1" statValue="10" type="1" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="Thickness_1" startUnitType="5" nominalUnitType="5">
+    <roles>
+     <role value="1" key="0"/>
+     <role value="1" key="1"/>
+    </roles>
+   </Variable>
+   <Variable start="1" nominal="6.66" statistical="0" step="1" statValue="10" type="1" stopUnitType="5" unitFamily="1" stepUnitType="5" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="Thickness_2" startUnitType="5" nominalUnitType="5">
+    <roles>
+     <role value="1" key="0"/>
+     <role value="2" key="1"/>
+    </roles>
+   </Variable>
+   <Variable start="1" nominal="3.24036" statistical="0" step="1" statValue="10" type="3" stopUnitType="0" unitFamily="3" stepUnitType="0" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="A_L3_2__Er__Real" startUnitType="0" nominalUnitType="0">
+    <roles>
+     <role value="2" key="0"/>
+     <role value="A_L3_2" key="2"/>
+    </roles>
+   </Variable>
+   <Variable start="1" nominal="0.00329683" statistical="0" step="1" statValue="10" type="3" stopUnitType="0" unitFamily="3" stepUnitType="0" optimizeMode="0" isAbsOfNegativeValue="0" statValueUnitType="-1" statMode="0" stop="10" points="10" sweep="0" sweepMode="1" enabled="1" Version="1.3" name="A_L3_2__Er__TanD" startUnitType="0" nominalUnitType="0">
+    <roles>
+     <role value="4" key="0"/>
+     <role value="A_L3_2" key="2"/>
+    </roles>
+   </Variable>
+  </Variables>
+ </CommonData>
+ <ComponentData Type="OaMultilayer" CurrentSubGroup="0">
+  <SubstrateData Type="OaSubstrate">
+   <LibSubstrate name="PCB_Deemb_lib:PCB_Extraction_A_L3_2_rms"/>
+  </SubstrateData>
+  <PhysicalData Version="1.4" Type="LineType">
+   <CrossSection TopPlane="cond" BottomPlane="M2" LineType="3">
+    <Lines>
+     <Line width="Width" spaceType="1" space="Space" layer="cond2"/>
+    </Lines>
+    <Clearances/>
+   </CrossSection>
+  </PhysicalData>
+ </ComponentData>
+</cild>

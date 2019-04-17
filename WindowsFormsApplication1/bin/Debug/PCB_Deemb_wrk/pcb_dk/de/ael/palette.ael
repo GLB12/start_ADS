@@ -1,0 +1,103 @@
+set_design_type(analogRFnet);
+
+de_define_library_palette("pcb_dk",SCHEMATIC_WINDOW, "analogRF_net", "pcb_dk", "pcb_dk", 0
+
+                       ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate2"
+					   ,""
+                       ,"Multilayer Substrate - 2 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB2")
+					   )
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate3"
+					   ,""
+                       ,"Multilayer Substrate - 3 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB3")
+					   )
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate4"
+					   ,""
+                       ,"Multilayer Substrate - 4 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB4")
+					   )					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate5"
+					   ,""
+                       ,"Multilayer Substrate - 5 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB5")
+					   )					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate6"
+					   ,""
+                       ,"Multilayer Substrate - 6 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB6")
+					   )					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate7"
+					   ,""
+                       ,"Multilayer Substrate - 7 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB7")
+					   )					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate8"
+					   ,""
+                       ,"Multilayer Substrate - 8 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB8")
+					   )	   					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate9"
+					   ,""
+                       ,"Multilayer Substrate - 9 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB9")
+					   )					   					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate10"
+					   ,""
+                       ,"Multilayer Substrate - 10 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB10")
+					   )					   					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate12"
+					   ,""
+                       ,"Multilayer Substrate - 12 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB12")
+					   )					   					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate14"
+					   ,""
+                       ,"Multilayer Substrate - 14 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB14")
+					   )					   					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate16"
+					   ,""
+                       ,"Multilayer Substrate - 16 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB16")
+					   )					   					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate32"
+					   ,""
+                       ,"Multilayer Substrate - 32 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB32")
+					   )					   					   
+					   ,list(
+					   "pcb_dk"
+					   ,"pcb_mlsubstrate40"
+					   ,""
+                       ,"Multilayer Substrate - 40 metal layers"
+                       ,strcat(dk_CIRCUIT_BITMAP_DIR, "MLSUB40")
+					   )
+					   );

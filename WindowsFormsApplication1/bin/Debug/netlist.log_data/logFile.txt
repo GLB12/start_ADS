@@ -1,0 +1,13 @@
+
+hpeesofsim (*) 510.gdevelop Mar 20 2019, MINT version 4
+    (64-bit windows built: Thu Mar 21, 2019 02:54:51 +0000)
+
+Parsing the netlist ...
+
+Error detected by hpeesofsim during netlist parsing.
+    ADS-syntax parser error in `netlist.log', line 22:
+        syntax error
+
+Flushing data (please wait) ...
+     ... data flush done.
+

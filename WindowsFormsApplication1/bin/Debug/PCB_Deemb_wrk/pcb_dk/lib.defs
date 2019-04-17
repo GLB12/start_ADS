@@ -1,0 +1,2 @@
+DEFINE pcb_dk ./pcb_dk_lib
+ASSIGN pcb_dk libMode readOnly

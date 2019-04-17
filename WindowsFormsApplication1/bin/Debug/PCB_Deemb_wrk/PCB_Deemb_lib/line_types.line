@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LineTypes>
+    <line name="A_L3_2">
+        <TMLtype>Custom</TMLtype>
+        <substrate>PCB_Deemb_lib:PCB_Extraction_substrate</substrate>
+        <strips>
+            <strip stripId="strip1" defaultWidth="1">
+                <layer name="cond2:drawing"/>
+                <spacing type="edge-edge" value="1"/>
+            </strip>
+        </strips>
+        <planes>
+            <plane layerName="cond:drawing"/>
+            <plane layerName="M2:drawing"/>
+        </planes>
+        <beginEndStyle type="truncate"/>
+        <cornerStyle type="square"/>
+        <simulationModel>
+            <modelSet>TLines-Multilayer</modelSet>
+            <useSingleTLineElementToModelATrace>false</useSingleTLineElementToModelATrace>
+            <autogenerateSubstrate>true</autogenerateSubstrate>
+            <substrateInstanceName></substrateInstanceName>
+        </simulationModel>
+    </line>
+</LineTypes>

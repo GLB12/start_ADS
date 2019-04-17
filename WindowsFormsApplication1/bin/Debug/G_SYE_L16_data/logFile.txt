@@ -1,0 +1,89 @@
+
+hpeesofsim (*) 510.gdevelop Mar 20 2019, MINT version 4
+    (64-bit windows built: Thu Mar 21, 2019 02:54:51 +0000)
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 77 : invalid character 'ç' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 78 : invalid character '¬' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 79 : invalid character '¬' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 80 : invalid character 'ä' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 81 : invalid character '¸' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 82 : invalid character '€' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 83 : invalid character 'è' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 84 : invalid character '½' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 85 : invalid character '®' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 87 : invalid character 'ç' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_I/G_SYE_L16_N2_Deemb_2.s2p'.
+
+SP SP1[1] <netlist.log>   freq=(10 MHz->50 GHz)
+
+Evaluating unattached measurement equations ...
+Flushing unattached measurement equation results ...
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+Flushing unattached measurement equation results ...
+     ... data flush done.
+
+Resource usage:
+  Total stopwatch time     =     4.01 seconds.
+

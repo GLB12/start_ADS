@@ -1,0 +1,76 @@
+// Copyright Keysight Technologies 2011 - 2013  
+create_text_form("StdForm","Standard",0,"%v","%v",NULL,NULL,NULL,NULL);
+create_form_set("StdFormSet","StdForm");
+
+create_constant_form("SIGNAL","signal",0,"\"signal\"","signal");
+create_constant_form("GROUND","ground",0,"\"ground\"","ground");
+create_constant_form("POWER","power",0,"\"power\"","power");
+create_constant_form("BLANK","blank",0,"\"blank\"","blank");
+create_form_set("MetalTypeML","SIGNAL","GROUND","POWER","BLANK");
+
+create_text_form("layer_text_form","layer_text_form","InstSelectionForm",0,"%d","%v",get_layout_layer_names,NULL,NULL,get_layer_id);
+create_form_set("ckt_pad_layer","layer_text_form");
+
+create_constant_form("DielectricLossModelConstantForm","FrequencyIndependent",0,"0","FrequencyIndependent");
+create_constant_form("DielectricLossModelDjordjevicForm","Svensson/Djordjevic",0,"1","Svensson/Djordjevic");
+create_form_set("DielectricLossModelFormSet","DielectricLossModelConstantForm","DielectricLossModelDjordjevicForm");
+
+create_constant_form("RoughnessModelSmoothForm","Smooth",0,"0","Smooth");
+create_constant_form("RoughnessModelHammerstadForm","Hammerstad",0,"1","Hammerstad");
+create_constant_form("RoughnessModelHemisphericalForm","Hemispherical",0,"2","Hemispherical");
+create_constant_form("RoughnessModelCannonballForm","Cannonball",0,"3","Cannonball");
+create_form_set("RoughnessModelFormSet","RoughnessModelHemisphericalForm", "RoughnessModelCannonballForm");
+
+create_text_form("FileBasedForm","File Based",0,"%v","%v",NULL,NULL,NULL,NULL);
+create_form_set("StdFileFormSet","StdForm","FileBasedForm");
+
+create_item("pcb_mlsubstrate2","Two Layer Substrate","Subst",512,-1,"MLSUB2","Component Parameters","*","%43?global %;model %t Substrate N=2 %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","SYM_MLSUB2",0,NULL,32,
+create_parm("Er","Dielectric Constant",3072,"StdFormSet",-1,prm("StdForm","4.5")),
+create_parm("H","Height of Substrate",3072,"StdFormSet",5,prm("StdForm","10 mil")),
+create_parm("TanD","Dielectric Loss Tangent",3072,"StdFormSet",-1,prm("StdForm","0")),
+create_parm("T[1]","Thickness",3072,"StdFormSet",5,prm("StdForm","0 mil")),
+create_parm("Cond[1]","Conductivity in Siemens/meter",3072,"StdFormSet",-1,prm("StdForm","1.0E+50")),
+create_parm("T[2]","Thickness",3072,"StdFormSet",5,prm("StdForm","0 mil")),
+create_parm("Cond[2]","Conductivity in Siemens/meter",3072,"StdFormSet",-1,prm("StdForm","1.0E+50")),
+create_parm("LayerType[1]","Metal Definition",131072,"MetalTypeML",-2,prm("SIGNAL")),
+create_parm("LayerType[2]","Metal Definition",131072,"MetalTypeML",-2,prm("GROUND")),
+create_parm("LayerName[1]","(for Layout option) Layer to which cond is mapped",576,"ckt_pad_layer",-1,prm("layer_text_form","\"cond\""),
+    list(dm_create_cb(PARM_DEFAULT_VALUE_CB,"stditem_current_layer_parm_default_cb",NULL,TRUE))),
+create_parm("LayerName[2]","(for Layout option) Layer to which cond is mapped",576,"ckt_pad_layer",-1,prm("layer_text_form","\"cond2\""),
+    list(dm_create_cb(PARM_DEFAULT_VALUE_CB,"stditem_current_layer_parm_default_cb",NULL,TRUE))),
+create_parm("LayerViaName[1]","(for Layout option) Layer to which via hole is mapped",576,"ckt_pad_layer",-1,prm("layer_text_form","\"pcvia1\""),
+    list(dm_create_cb(PARM_DEFAULT_VALUE_CB,"stditem_current_layer_parm_default_cb",NULL,TRUE))),
+create_parm("DielectricLossModel","0 - frequency independent, 1 - Svensson/Djordjevic (default: 1)",512,"DielectricLossModelFormSet",-1,prm("DielectricLossModelDjordjevicForm")),
+create_parm("FreqForEpsrTanD","Frequency at which Er and TanD are specified (default: 1.0 GHz)",3584,"StdFileFormSet",0,prm("StdForm","1.0 GHz")),
+create_parm("LowFreqForTanD","Low roll-off frequency for TanD (default: 1.0e3)",3584,"StdFileFormSet",0,prm("StdForm","1.0 kHz")),
+create_parm("HighFreqForTanD","High roll-off frequency for TanD (default: 1.0e12)",3584,"StdFileFormSet",0,prm("StdForm","1.0 THz")),
+create_parm("RoughnessModel","2 - Hemispherical, 3 - Cannonball (default: 2)",512,"RoughnessModelFormSet",-1,prm("RoughnessModelHemisphericalForm")),
+create_parm("Rough","Conductor Surface Roughness Protrusion Height",3072,"StdFormSet",5,prm("StdForm","0")),
+create_parm("Bbase","Conductor Surface Roughness Protrusion Base Width",3072,"StdFormSet",5,prm("StdForm","")),
+create_parm("Dpeaks","Conductor Surface Roughness Protrusion Peak Distance",3072,"StdFormSet",5,prm("StdForm","")),
+create_parm("Rz_drum","Rz on the drum side for Cannonball roughness model",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("Rz_matte","Rz on the matte side for Cannonball roughness model",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Rough","Conductor Surface Roughness Protrusion Height (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Bbase","Conductor Surface Roughness Protrusion Base Width (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Dpeaks","Conductor Surface Roughness Protrusion Peak Distance (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Rough","Conductor Surface Roughness Protrusion Height (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Bbase","Conductor Surface Roughness Protrusion Base Width (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Dpeaks","Conductor Surface Roughness Protrusion Peak Distance (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("Rough[1]","Conductor Surface Roughness Protrusion Height",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("Bbase[1]","Conductor Surface Roughness Protrusion Base Width",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("Dpeaks[1]","Conductor Surface Roughness Protrusion Peak Distance",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Rough[1]","Conductor Surface Roughness Protrusion Height (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Bbase[1]","Conductor Surface Roughness Protrusion Base Width (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Dpeaks[1]","Conductor Surface Roughness Protrusion Peak Distance (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Rough[1]","Conductor Surface Roughness Protrusion Height (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Bbase[1]","Conductor Surface Roughness Protrusion Base Width (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Dpeaks[1]","Conductor Surface Roughness Protrusion Peak Distance (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("Rough[2]","Conductor Surface Roughness Protrusion Height",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("Bbase[2]","Conductor Surface Roughness Protrusion Base Width",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("Dpeaks[2]","Conductor Surface Roughness Protrusion Peak Distance",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Rough[2]","Conductor Surface Roughness Protrusion Height (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Bbase[2]","Conductor Surface Roughness Protrusion Base Width (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L2Dpeaks[2]","Conductor Surface Roughness Protrusion Peak Distance (Level 2)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Rough[2]","Conductor Surface Roughness Protrusion Height (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Bbase[2]","Conductor Surface Roughness Protrusion Base Width (Level 3)",3584,"StdFormSet",5,prm("StdForm","")),
+create_parm("L3Dpeaks[2]","Conductor Surface Roughness Protrusion Peak Distance (Level 3)",3584,"StdFormSet",5,prm("StdForm","")));

@@ -1,0 +1,114 @@
+
+hpeesofsim (*) 510.gdevelop Mar 20 2019, MINT version 4
+    (64-bit windows built: Thu Mar 21, 2019 02:54:51 +0000)
+
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 77 : invalid character 'ç' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 78 : invalid character '¬' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 79 : invalid character '¬' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 80 : invalid character 'ä' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 81 : invalid character 'º' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 82 : invalid character 'Œ' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 83 : invalid character 'è' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 84 : invalid character '½' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+Warning detected by hpeesofsim during netlist flattening.
+    Touchstone file parser warning:
+    Line - 3, Column - 85 : invalid character '®' in a comment line.
+    Non-US-ASCII characters violate the Touchstone Specification
+    and may result in file reading failure.
+    File: `C:/Work/EESof/Project/Huawei/PCB_Material/Implementation/Raw_Data/Data/Round_II/WUS_2_B_L3_Deemb_2.s2p'.
+
+OPTIM Optim1[1] <PCB_Deemb_lib:B3_R2_v2:schematic>  optIter=(0->2000)
+
+SP Optim1[1].SP1[0] <PCB_Deemb_lib:B3_R2_v2:schematic>  optIter=0  freq=(10 MHz->50 GHz)
+
+Iteration/Trial #0:
+  CurrentEF: 29540.2962231803
+  Optimization variables:
+    er = 3.14
+    highfreq = 107.385
+    lowfreq = 1e+03
+    mytand = 1.07781e-03
+
+SP Optim1[1].SP1[1] <PCB_Deemb_lib:B3_R2_v2:schematic>  optIter=1  freq=(10 MHz->50 GHz)
+
+Iteration/Trial #1:
+  CurrentEF: 0.745677865887473
+  Optimization variables:
+    er = 3.069933664548939
+    highfreq = 107.3849875809252
+    lowfreq = 1.00000604913992e+03
+    mytand = 1.08209970805688e-03
+
+SP Optim1[1].SP1[2] <PCB_Deemb_lib:B3_R2_v2:schematic>  optIter=2  freq=(10 MHz->50 GHz)
+
+Iteration/Trial #2:
+  CurrentEF: 0.00637545530433561
+  Optimization variables:
+    er = 3.070672920439989
+    highfreq = 107.3883105197571
+    lowfreq = 1.00021301220201e+03
+    mytand = 1.273795216858956e-03
+
+SP Optim1[1].SP1[3] <PCB_Deemb_lib:B3_R2_v2:schematic>  optIter=3  freq=(10 MHz->50 GHz)
+
+Iteration/Trial #3:
+  CurrentEF: 0.00637425600884359
+  Optimization variables:
+    er = 3.070673623584817
+    highfreq = 107.3603239822495
+    lowfreq = 998.8012842194512
+    mytand = 1.273982548268303e-03
+
+SP Optim1[1].SP1[4] <PCB_Deemb_lib:B3_R2_v2:schematic>  optIter=4  freq=(10 MHz->50 GHz)
+
+Iteration/Trial #4:
+  CurrentEF: 0.00637366443144811
+  Optimization variables:
+    er = 3.070673923825778
+    highfreq = 106.2521428679409
+    lowfreq = 986.9517502140297
+    mytand = 1.274061112768824e-03
+
+Resource usage:
+  Total stopwatch time     =    14.81 seconds.
+

@@ -1,0 +1,28 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor name="Copper" tc1="" tc2="" real="5.8e7 Siemens/m" heat_capacity="2.49E+06" thermal_conductivity="401" electron_path="" imag="" mur_real="1" mur_imag="" tnom="" thermal_conductivity_in_z="" parmtype="1"/>
+        <Conductor name="Typical_solder" tc1="" tc2="" real="0.71e7 Siemens/m" heat_capacity="" thermal_conductivity="" electron_path="" imag="" mur_real="1" mur_imag="" tnom="" thermal_conductivity_in_z="" parmtype="1"/>
+        <Conductor name="cond2" tc1="" tc2="" real="5.8e+07 Siemens/m" heat_capacity="" thermal_conductivity="" electron_path="" imag="" mur_real="1" mur_imag="" tnom="" thermal_conductivity_in_z="" parmtype="1"/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric name="FR_4_Core" valuefreq="1 GHz" lowfreq="1 KHz" highfreq="1 THz" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="4.6" mur_real="1" er_loss="0.01" mur_imag="" loss_type="1" thermal_conductivity_in_z=""/>
+        <Dielectric name="FR_4_Prepreg" valuefreq="1 GHz" lowfreq="1 KHz" highfreq="1 THz" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="4.6" mur_real="1" er_loss="0.01" mur_imag="" loss_type="1" thermal_conductivity_in_z=""/>
+        <Dielectric name="SolderMask" valuefreq="1 GHz" lowfreq="1 KHz" highfreq="1 THz" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.3" mur_real="1" er_loss="" mur_imag="" loss_type="1" thermal_conductivity_in_z=""/>
+        <Dielectric name="Alumina" valuefreq="1 GHz" lowfreq="1 KHz" highfreq="1 THz" heat_capacity="1.73E+06" er_imag="" thermal_conductivity="25.25" electron_path="" er_real="9.6" mur_real="1" er_loss="" mur_imag="" loss_type="1" thermal_conductivity_in_z=""/>
+        <Dielectric name="Subst_2" valuefreq="" lowfreq="" highfreq="" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.24036" mur_real="1" er_loss="0.00329683" mur_imag="0" loss_type="0" thermal_conductivity_in_z=""/>
+        <Dielectric name="Subst_1_1" valuefreq="" lowfreq="" highfreq="" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.08877" mur_real="1" er_loss="0.00223528" mur_imag="0" loss_type="0" thermal_conductivity_in_z=""/>
+        <Dielectric name="Subst_2_1" valuefreq="" lowfreq="" highfreq="" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.08877" mur_real="1" er_loss="0.00223528" mur_imag="0" loss_type="0" thermal_conductivity_in_z=""/>
+        <Dielectric name="Subst_1_2" valuefreq="" lowfreq="" highfreq="" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.23513" mur_real="1" er_loss="0.00247328" mur_imag="0" loss_type="0" thermal_conductivity_in_z=""/>
+        <Dielectric name="Subst_2_2" valuefreq="" lowfreq="" highfreq="" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.23513" mur_real="1" er_loss="0.00247328" mur_imag="0" loss_type="0" thermal_conductivity_in_z=""/>
+        <Dielectric name="Subst_1_3" valuefreq="" lowfreq="" highfreq="" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.1313" mur_real="1" er_loss="0.00225669" mur_imag="0" loss_type="0" thermal_conductivity_in_z=""/>
+        <Dielectric name="Subst_2_3" valuefreq="" lowfreq="" highfreq="" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="3.1313" mur_real="1" er_loss="0.00225669" mur_imag="0" loss_type="0" thermal_conductivity_in_z=""/>
+        <Dielectric name="substrate" valuefreq="5 GHz" lowfreq="LOW KHz" highfreq="HIGH THz" heat_capacity="" er_imag="" thermal_conductivity="" electron_path="" er_real="er" mur_real="1" er_loss="tand" mur_imag="0" loss_type="1" thermal_conductivity_in_z=""/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness>
+        <roughmodel name="A" l3bbase="" l2dpeaks="" bbase="" dpeaks="" l3dpeaks="" l2bbase="" rough="0.2761 um" l2rough="" l3rough="" modeltype="2"/>
+        <roughmodel name="core" l3bbase="" l2dpeaks="" bbase="" dpeaks="" l3dpeaks="" l2bbase="" rough="Rough_core um" l2rough="" l3rough="" modeltype="2"/>
+        <roughmodel name="pp" l3bbase="" l2dpeaks="" bbase="" dpeaks="" l3dpeaks="" l2bbase="" rough="Rough_pp um" l2rough="" l3rough="" modeltype="2"/>
+    </roughness>
+</Materials>
