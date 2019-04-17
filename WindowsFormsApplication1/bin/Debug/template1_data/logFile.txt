@@ -78,5 +78,5 @@ Flushing unattached measurement equation results ...
      ... data flush done.
 
 Resource usage:
-  Total stopwatch time     =     1.74 seconds.
+  Total stopwatch time     =     2.00 seconds.
 
